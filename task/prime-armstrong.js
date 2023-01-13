@@ -1,4 +1,4 @@
-const isprime = (n) =>{
+const isprime = n =>{
     for (let i=0; i< Math.sqrt(n);i+=2)
     {
         if (n%i === 0){
