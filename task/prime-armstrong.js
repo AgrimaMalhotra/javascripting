@@ -1,4 +1,4 @@
-function  isprime(n){
+const isprime = (n) =>{
     for (let i=0; i< Math.sqrt(n);i+=2)
     {
         if (n%i === 0){
@@ -9,7 +9,7 @@ function  isprime(n){
     console.log('Is prime.');
     return;
 }
-function isarmsrtong(n){
+const isarmsrtong = n =>{
     const num=n;
     let sum=0;
     while (n>0){
@@ -26,5 +26,5 @@ function isarmsrtong(n){
     return;
 }
 
-isarmsrtong(153);
+isarmsrtong(152);
 isprime(17);
