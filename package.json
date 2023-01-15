@@ -1,0 +1,19 @@
+{
+  "name": "javascripting",
+  "version": "1.0.0",
+  "description": "CODEACADEMY Javascripting Exercise  - Agrima Malhotra",
+  "main": "number-to-strings.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akaAgrima/javascripting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akaAgrima/javascripting/issues"
+  },
+  "homepage": "https://github.com/akaAgrima/javascripting#readme"
+}
