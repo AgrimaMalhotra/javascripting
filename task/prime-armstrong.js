@@ -1,30 +1,36 @@
-const isprime = n =>{
-    for (let i=0; i< Math.sqrt(n);i+=2)
+const isPrime = input =>{
+    if (input==0 || input==1)
+    {return false;}
+    for (let idx=2; idx< Math.sqrt(input);idx+=2)
     {
-        if (n%i === 0){
-            console.log('Not Prime.');
-            return;
+        if (input%idx === 0){
+            return false;
         }
     }
-    console.log('Is prime.');
-    return;
-}
-const isarmsrtong = n =>{
-    const num=n;
-    let sum=0;
-    while (n>0){
-        let r=n%10;
-        sum+=r*r*r;
-        n=parseInt(n/10);
-    }
-    if (sum === num){
-        console.log('Is Armstrong');
-    }
-    else {
-        console.log('Not Armstrong');
-    }
-    return;
+    return true;
 }
 
-isarmsrtong(152);
-isprime(17);
+const isArmstrong = input =>{
+    const num=input;
+    let sum=0;
+    let size=input.toString().length;
+    while (input>0){
+        let remainder=input%10;
+        sum+=Math.pow(remainder, size);
+        input=parseInt(input/10);
+    }
+    if (sum === num){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+input1=153;
+input2=17;
+console.log(isArmstrong(input1));
+console.log(isPrime(input2));
+
+//jest testing
+module.exports = {isArmstrong, isPrime};
